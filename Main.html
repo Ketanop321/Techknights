@@ -60,6 +60,83 @@
 
        </div>
 
-      </section>
+       
+    </section>
+    <hr style="height: 6px; background-color: grey; border: none; width: 100%; ">
+
+    <div class="form-container">
+        <h2>REGISTER HERE:</h2>
+        <p>FILL THIS FORM</p>
+        <form id="registrationForm" action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required><br>
+
+            <label for="college">College:</label>
+            <input type="text" id="college" name="college" required><br>
+
+            <label for="dept">Department:</label>
+            <input type="text" id="dept" name="dept" required><br>
+
+            <label for="year">Year:</label>
+            <div>
+                <input type="radio" id="1st" name="year" value="1st" required>
+                <label for="1st">1st</label>
+                
+                <input type="radio" id="2nd" name="year" value="2nd">
+                <label for="2nd">2nd</label>
+                
+                <input type="radio" id="3rd" name="year" value="3rd">
+                <label for="3rd">3rd</label>
+                
+                <input type="radio" id="4th" name="year" value="4th">
+                <label for="4th">4th</label>
+            </div><br>
+
+            <label for="gender">Gender:</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="skills">Skills:</label><br>
+            <div>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js" name="skills" value="JavaScript">
+                <label for="js">JavaScript</label>
+
+                <input type="checkbox" id="react" name="skills" value="React">
+                <label for="react">React</label>
+            </div><br>
+
+            <label for="feedback">WHY JOINING THIS EVENT?</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+
+
+    
 </body>
 </html>
