@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
 }
 
 body {
@@ -36,25 +38,30 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: grey;
     font-weight: bold;
 }
 
-.about-section {
+nav a:hover {
+    cursor: pointer;
+    color: #268B8A;
+}
+
+#about-section {
     background-color: #77B895;
     width: 100%;
     text-align: center;
     height: 450px;
 }
 
-.about-section h2 {
+#about-section h2 {
     font-size: 28px;
     margin-bottom: 15px;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.about-section p {
+#about-section p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -96,14 +103,18 @@ i span {
     font-weight: bold;
 }
 
-.form-container {
+#form-container {
     background-color: #fff;
-    width: 50%;
+    width: 30%;
     margin: auto;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-outercontainer {
+
 }
 
 h2 {
@@ -119,7 +130,6 @@ p {
 }
 
 form label {
-    display: block;
     font-weight: bold;
     margin-top: 10px;
     color: #333;
@@ -131,11 +141,23 @@ input[type="tel"]{
     width: 100%;
     padding: 10px;
     margin: 8px 0;
-    border: 1px solid #ccc;
     /* border-radius: 5px; */
     border: none;
     outline: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 2px;
     border-bottom: 2px solid black;
+}
+
+input:focus,
+input:valid{
+    outline: 2px solid black;
 }
 
 #feedback {
@@ -154,11 +176,17 @@ input[type="date"]{
 }
 
 input[type="radio"] {
-    margin-right: 5px;
+    display: inline-block;
+    border: none;
+    outline: none;
 }
+
+
 input[type="checkbox"] {
     margin-right: 10px;
     align-content: end;
+    border: none;
+    outline: none;
 }
 
 button {
@@ -209,9 +237,9 @@ button:hover {
 }
 .form-group {
     margin-bottom: 20px;
-  }
+ }
 
-  .label-block {
+ .label-block {
     display: block;
     font-size: 18px;
     font-weight: bold;
