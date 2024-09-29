@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
 * {
     box-sizing: border-box;
-    font-family: "Dosis", sans-serif;
-    font-weight: 500;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -38,30 +36,25 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: grey;
+    color: #333;
     font-weight: bold;
 }
 
-nav a:hover {
-    cursor: pointer;
-    color: #268B8A;
-}
-
-#about-section {
+.about-section {
     background-color: #77B895;
     width: 100%;
     text-align: center;
     height: 450px;
 }
 
-#about-section h2 {
+.about-section h2 {
     font-size: 28px;
     margin-bottom: 15px;
     font-weight: bold;
     margin-top: 10px;
 }
 
-#about-section p {
+.about-section p {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -103,18 +96,14 @@ i span {
     font-weight: bold;
 }
 
-#form-container {
+.form-container {
     background-color: #fff;
-    width: 30%;
+    width: 50%;
     margin: auto;
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-.form-outercontainer {
-
 }
 
 h2 {
@@ -130,6 +119,7 @@ p {
 }
 
 form label {
+    display: block;
     font-weight: bold;
     margin-top: 10px;
     color: #333;
@@ -141,23 +131,11 @@ input[type="tel"]{
     width: 100%;
     padding: 10px;
     margin: 8px 0;
+    border: 1px solid #ccc;
     /* border-radius: 5px; */
     border: none;
     outline: none;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"]{
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border-radius: 2px;
     border-bottom: 2px solid black;
-}
-
-input:focus,
-input:valid{
-    outline: 2px solid black;
 }
 
 #feedback {
@@ -176,17 +154,11 @@ input[type="date"]{
 }
 
 input[type="radio"] {
-    display: inline-block;
-    border: none;
-    outline: none;
+    margin-right: 5px;
 }
-
-
 input[type="checkbox"] {
     margin-right: 10px;
     align-content: end;
-    border: none;
-    outline: none;
 }
 
 button {
@@ -206,4 +178,32 @@ button:hover {
 .radio-group, .checkbox-group {
     display: flex;
     justify-content: space-between;
+}
+
+/* Custom input container styles */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    outline: none;
+}
+
+.input-container input:focus {
+    border-bottom: 2px solid #000;
+}
+
+.input-container label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 14px;
+    color: black;
 }
