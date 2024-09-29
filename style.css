@@ -76,11 +76,11 @@ i span {
 
 .dark-green-line {
     border: none;
-    height: 10px;
+    height: 12px;
     background-color: #93f093;
     width: 100%;
-    align-self: flex-start;
-}
+    margin-top: -5px;
+ }
 
 .circle {
     height: 500px;
@@ -207,3 +207,36 @@ button:hover {
     font-size: 14px;
     color: black;
 }
+.form-group {
+    margin-bottom: 20px;
+  }
+
+  .label-block {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    display: block;
+  }
+
+  .radio-group label,
+  .checkbox-group label {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+  .radio-group input,
+  .checkbox-group input {
+    margin-right: 5px;
+  }
+
+  #dob {
+    font-size: 16px;
+    padding: 5px;
+    margin-top: 5px;
+  }
