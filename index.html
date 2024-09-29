@@ -12,12 +12,12 @@
 </head>
 
 <body>
+  <div class="navbar">
     <header>
         <h1>TECHKNIGHTS ASSOCIATION</h1>
-        <br>
+      
         <p>PRESENTS</p>
     </header>
-
     <nav>
         <ul>
             <li><a href="#about-section">ABOUT US</a></li>
@@ -25,9 +25,7 @@
             <li><a href="#form-container">REGISTER</a></li>
         </ul>
     </nav>
-
-
-
+</div>
     <section id="about-section">
         <hr class="dark-green-line">
 
@@ -109,22 +107,24 @@
                 <label for="4th">4th</label><br>
             </div><br>
 
-            <label for="gender">GENDER:</label>
-            <br><br>
-            <div>
-                <input type="radio" id="male" name="gender" value="male" required>
-                <label for="male">Male</label> <br>
-
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label> <br>
-            </div><br>
-
             <label for="dob">DOB:</label>
             <br><br>
             <input type="date" id="dob" name="dob" required><br><br>
+  
+              <div class="form-group">
+                <label class="label-block" for="gender">GENDER</label>
+                <div class="radio-group">
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label for="male">Male</label><br>
+              
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                </div>
+              </div>
+           
+              <label for="skills">SKILLS:</label><br><br>
 
-            <label for="skills">SKILLS:</label><br><br>
-            <div>
+              <div>
                 <input type="checkbox" id="html" name="skills" value="HTML">
                 <label for="html">HTML</label> <br>
 
@@ -134,8 +134,6 @@
                 <input type="checkbox" id="js" name="skills" value="JavaScript">
                 <label for="js">JavaScript</label> <br>
 
-                <input type="checkbox" id="react" name="skills" value="React">
-                <label for="react">React</label> <br>
             </div><br>
             <label for="feedback">WHY JOINING THIS EVENT?</label><br><br>
             <textarea id="feedback" name="feedback" rows="8" cols="80" required placeholder="Reason For Joining This Event"></textarea><br>
