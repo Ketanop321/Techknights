@@ -23,9 +23,10 @@ header h1 {
 }
 
 header p {
+    font-family: Arial;
     font-size: 1em;
-    color: #777777;
-    font-weight: normal;
+    color: #8f8f8f;
+    font-weight: bold;
 }
 .navbar {
     position: fixed;
@@ -41,14 +42,14 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: #777777;
-    font-weight: bold;
+    color: #5d5c5cea;
+    font-weight: 500;
     font-size: 1em;
 }
 
@@ -57,18 +58,31 @@ nav a:hover {
     color: #268B8A;
 }
 
-/* Add top margin to the main content to avoid overlap with fixed navbar */
 #about-section, #frontend-mentor, #form-container {
-    margin-top: 150px; /* Adjust this value to match the height of the navbar */
+    margin-top: 80px;  
+    margin-bottom: 75px;
+    position: relative;
 }
+
+#about-section:before, #frontend-mentor:before  {
+    content: "";
+    display: block;
+    height: 60px; /* Match the height of the navbar */
+    margin-top: -1px; /* Move the anchor point up by the navbar height */
+}
+
+
 #about-section {
-    background-color: #77B895;
+    background-color: hwb(131 24% 16% / 0.526);
     width: 100%;
     text-align: center;
-    height: 450px;
+    height: 500px;
+    padding-top: 7px;
  }
 
-
+.weight{
+    font-weight: 300;
+}
 #about-section h2 {
     font-size: 28px;
     margin-bottom: 15px;
@@ -80,6 +94,7 @@ nav a:hover {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
+    color: black;
 }
 
 .social-icons a {
@@ -96,53 +111,47 @@ i span {
     font-weight: normal;
 }
 
-.dark-green-line {
+.heading-line {
+    position: absolute;  
     border: none;
-    height: 12px;
-    background-color: #93f093;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin-top: -5px;
- }
+  }
 
 .circle {
-    height: 500px;
-    width: 500px;
+    height: 420px;
+    width: 420px;
     border-radius: 50%;
-    background-color: #93f093;
+    background-color: #66c566d6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .inner-text {
-    font-weight: bold;
+     padding: 39px;
+    line-height: 1.3;
+    font-size: larger;
 }
 
-#form-container {
-    background-color: #fff;
-    width: 30%;
-    margin: auto;
-    padding: 30px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-.form-outercontainer {
-
-}
+ #frontend-heading{
+    color: grey;
+    font-weight: 780;
+ }
 
 h2 {
     text-align: center;
-    color: #2C8C73;
+    color: black;
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 
 p {
     text-align: center;
-    color: #333;
-    font-weight: bold;
+     font-weight: 400;
     margin-bottom: 20px;
-}
+ }
 
 form label {
     font-weight: bold;
@@ -203,11 +212,12 @@ input[type="checkbox"] {
     border: none;
     outline: none;
 }
-
+ 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #2C8C73;
+     padding: 7px;
+     padding-left: 30px;
+     padding-right: 30px;
+    background-color: #1c201ec1;
     color: white;
     border: none;
     border-radius: 5px;
@@ -283,3 +293,25 @@ button:hover {
     padding: 5px;
     margin-top: 5px;
   }
+  .background-box {
+    background-color: rgba(240, 240, 240, 0.8); /* Light gray background with some transparency */
+    padding: 30px; /* Add padding around the form */
+    border-radius: 15px; /* Round the corners */
+    box-shadow: 0 1px 20px #ffffff; /* Shadow effect */
+    display: flex; /* Use flex to center the form */
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: auto; /* Maintain height based on content */
+}
+
+#form-container {
+    background-color: #fff;
+    width: 100%; /* Set to 100% of the parent container */
+    max-width: 500px; /* Limit the max width */
+    margin: auto; /* Center the form horizontally */
+    padding: 30px; /* Keep original padding */
+    border: 1px solid #ccc; /* Original border */
+    border-radius: 10px; /* Keep original border radius */
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Keep original shadow */
+}
+

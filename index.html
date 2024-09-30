@@ -15,20 +15,21 @@
         <p>PRESENTS</p>
     </header>
     <nav>
-        <ul>
+        <ul style="margin-bottom: 5px;">
             <li><a href="#about-section">ABOUT US</a></li>
             <li><a href="#frontend-mentor">EVENT</a></li>
             <li><a href="#form-container">REGISTER</a></li>
         </ul>
     </nav>
+     <div class="heading-line" ></div>
+
 </div>
     
     
-    <section id="about-section">
-        <hr class="dark-green-line">
+    <section  id="about-section">
 
          <h2>ABOUT US</h2>
-        <p>Department Of Computer Science And Business Systems<br>
+        <p >Department Of Computer Science And Business Systems<br>
         Presenting International Level Symposium On 5th October, 2024<br>
         "Towen Gen3"</p>
 
@@ -52,13 +53,13 @@
 
       <section id="frontend-mentor">
        <h2>FRONTEND MENTOR</h2>
-       <P>Unlock And Elevate Your Frontend Skills</P>
+       <P id="frontend-heading">Unlock And Elevate Your Frontend Skills</P>
 
        <div class="circle">
 
         <div class="inner-text">
 
-            <p>"Frontend Mentor IS An Exciting Event for Devlopers, Where They Need To Code A Given Web Design Pagte Using Html, Css And javascript</p>
+            <p>"Frontend Mentor IS An Exciting Event for Devlopers,<br> Where They Need To Code <br>A Given Web Design Page <br> Using Html, Css And javascript."</p>
 
         </div>
 
@@ -66,80 +67,91 @@
 
        
     </section>
-    <hr style="height: 6px; background-color: grey; border: none; width: 100%; ">
-    <div class="form-outercontainer"></div>
-    <div id="form-container">
-        <h2>REGISTER HERE:</h2>
-        <p>FILL THIS FORM</p>
-        <form id="registrationForm" action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="contact">Contact Number:</label>
-            <input type="tel" id="contact" name="contact" required><br>
-
-            <label for="college">College:</label>
-            <input type="text" id="college" name="college" required><br>
-
-            <label for="dept">Department:</label>
-            <input type="text" id="dept" name="dept" required><br>
 
 
-            <label for="year">YEAR:</label>
-            <br><br>
-            <div class="Gender">
-                <input type="radio" id="1st" name="year" value="1st" required>
-                <label for="1st">1st</label><br>
-                
-                <input type="radio" id="2nd" name="year" value="2nd">
-                <label for="2nd">2nd</label><br>
-                
-                <input type="radio" id="3rd" name="year" value="3rd">
-                <label for="3rd">3rd</label><br>
-                
-                <input type="radio" id="4th" name="year" value="4th">
-                <label for="4th">4th</label><br>
-            </div><br>
+    
+    <hr style="height: 1px; background-color: #c3c3c3; border: none; width: 100%; margin-bottom:100px ; ">
+     
 
-            <label for="dob">DOB:</label>
-            <br><br>
-            <input type="date" id="dob" name="dob" required><br><br>
+    <div class="background-box">
+      <div id="form-container">
+          <h2 style="color: #008080;">REGISTER HERE:</h2>
+         <u> <p style="font-family: arial ; font-weight: 100;">FILL THIS FORM</p></u>
+          <form id="registrationForm" action="#" method="POST">
+              <label class="weight"  for="name">NAME</label>
+              <input  type="text" id="name" name="name" required><br>
   
-              <div class="form-group">
-                <label class="label-block" for="gender">GENDER</label>
-                <div class="radio-group">
-                  <input type="radio" id="male" name="gender" value="male" required>
-                  <label for="male">Male</label><br>
-              
-                  <input type="radio" id="female" name="gender" value="female">
-                  <label for="female">Female</label>
-                </div>
-              </div>
+              <label class="weight" for="email">EMAIL</label>
+              <input type="email" id="email" name="email" required><br>
+  
+              <label class="weight" for="contact">CONTACT NUMBER</label>
+              <input type="tel" id="contact" name="contact" required><br>
+  
+              <label class="weight" for="college">COLLEGE</label>
+              <input type="text" id="college" name="college" required><br>
+  
+              <label class="weight" for="dept">DEPT</label>
+              <input type="text" id="dept" name="dept" required><br>
+  
+              <label class="weight"  for="year">YEAR</label>
+              <br><br>
+              <div class="Gender">
+                  <input type="radio" id="1st" name="year" value="1st" required>
+                  <label class="weight" for="1st">1st</label><br>
+  
+                  <input type="radio" id="2nd" name="year" value="2nd">
+                  <label class="weight" for="2nd">2nd</label><br>
+  
+                  <input type="radio" id="3rd" name="year" value="3rd">
+                  <label  class="weight" for="3rd">3rd</label><br>
+  
+                  <input type="radio" id="4th" name="year" value="4th">
+                  <label  class="weight" for="4th">4th</label><br>
+              </div><br>
+  
            
-              <label for="skills">SKILLS:</label><br><br>
+   
 
+
+              <div class="form-group">
+                  <label class="weight"  class="label-block" for="gender">GENDER</label>
+                  <div class="radio-group">
+                      <input type="radio" id="male" name="gender" value="male" required>
+                      <label  class="weight" for="male">Male</label><br>
+  
+                      <input type="radio" id="female" name="gender" value="female">
+                      <label class="weight"   for="female">Female</label>
+                  </div>
+              </div>
+
+
+              <label class="weight" for="dob">DOB:</label>
+              <br><br>
+              <input type="date" id="dob" name="dob" required><br><br>
+
+
+
+              <label class="weight" for="skills">SKILLS:</label><br><br>
+  
               <div>
-                <input type="checkbox" id="html" name="skills" value="HTML">
-                <label for="html">HTML</label> <br>
-
-                <input type="checkbox" id="css" name="skills" value="CSS">
-                <label for="css">CSS</label> <br>
-
-                <input type="checkbox" id="js" name="skills" value="JavaScript">
-                <label for="js">JavaScript</label> <br>
-
-            </div><br>
-            
-               
-
-            <label for="feedback">WHY JOINING THIS EVENT?</label><br><br>
-            <textarea id="feedback" name="feedback" rows="8" cols="80" required placeholder="Reason For Joining This Event"></textarea><br>
-
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+                  <input type="checkbox" id="html" name="skills" value="HTML">
+                  <label class="weight" for="html">HTML</label> <br>
+  
+                  <input type="checkbox" id="css" name="skills" value="CSS">
+                  <label class="weight" for="css">CSS</label> <br>
+  
+                  <input type="checkbox" id="js" name="skills" value="JavaScript">
+                  <label class="weight"  for="js">JavaScript</label> <br>
+              </div><br>
+  
+              <label class="weight" for="feedback">WHY JOINING THIS EVENT?</label><br><br>
+              <textarea id="feedback" name="feedback" rows="8" cols="80" required placeholder="Reason For Joining This Event"></textarea><br>
+  
+              <button  class="weight" type="submit">Submit</button>
+          </form>
+      </div>
+  </div>
+  
+  
 </body>
 </html>
