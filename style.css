@@ -1,4 +1,4 @@
- * {
+* {
     box-sizing: border-box;
     font-family: "Dosis", sans-serif;
     font-weight: 500;
@@ -34,8 +34,8 @@ header p {
     left: 0;
     width: 100%;
     background-color: white;
-    z-index: 999; /* Ensures it stays on top of other elements */
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    z-index: 999; 
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
 } 
 
 nav ul {
@@ -58,18 +58,20 @@ nav a:hover {
     color: #268B8A;
 }
 
-#about-section, #frontend-mentor, #form-container {
-    margin-top: 80px;  
-    margin-bottom: 75px;
-    position: relative;
-}
-
-#about-section:before, #frontend-mentor:before  {
+#about-section:before, #frontend-mentor:before, #form-container:before {
     content: "";
     display: block;
-    height: 60px; /* Match the height of the navbar */
-    margin-top: -1px; /* Move the anchor point up by the navbar height */
+    height: 150px;  
+    margin-top: -10px;  
 }
+
+/* #about-section:before, #frontend-mentor:before  {
+    content: "";
+    display: block;
+    height: 150px;  
+   
+    margin-top: -10px;  
+} */
 
 
 #about-section {
@@ -217,7 +219,7 @@ button {
      padding: 7px;
      padding-left: 30px;
      padding-right: 30px;
-    background-color: #1c201ec1;
+    background-color: #141414c1;
     color: white;
     border: none;
     border-radius: 5px;
@@ -294,24 +296,24 @@ button:hover {
     margin-top: 5px;
   }
   .background-box {
-    background-color: rgba(240, 240, 240, .8); /* Light gray background with some transparency */
-    padding: 30px; /* Add padding around the form */
-    border-radius: 15px; /* Round the corners */
-    box-shadow: 0 1px 20px #dad0d0; /* Shadow effect */
-    display: flex; /* Use flex to center the form */
-    justify-content: center; /* Center the form horizontally */
-    align-items: center; /* Center the form vertically */
-    height: auto; /* Maintain height based on content */
+    background-color: rgba(240, 240, 240, .8);  
+    padding: 30px;  
+    border-radius: 15px;  
+    box-shadow: 0 1px 20px #dad0d0;  
+    display: flex;  
+    justify-content: center; 
+    align-items: center;  
+    height: auto;  
 }
 
 #form-container {
     background-color: #fff;
-    width: 100%; /* Set to 100% of the parent container */
-    max-width: 500px; /* Limit the max width */
-    margin: auto; /* Center the form horizontally */
-    padding: 30px; /* Keep original padding */
-    border: 1px solid #ccc; /* Original border */
-    border-radius: 10px; /* Keep original border radius */
-    box-shadow: 0px 0px 20px rgba(212, 201, 201, 0.93); /* Keep original shadow */
-}
+    width: 100%; 
+    max-width: 500px;  
+    margin: auto;  
+    padding: 30px; 
+    border: 1px solid #ccc;  
+    border-radius: 10px;  
+    box-shadow: 0px 0px 20px rgba(212, 201, 201, 0.93);  
+ }
 
